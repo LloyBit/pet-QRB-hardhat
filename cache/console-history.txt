@@ -1,0 +1,26 @@
+exit
+console.log("Transaction hash:", tx.hash);
+});
+    value: ethers.parseEther("1.0")
+    to: addr1.address,
+const tx = await owner.sendTransaction({
+console.log("Addr1 balance:", ethers.formatEther(await ethers.provider.getBalance(addr1.address)));
+console.log("Addr1 balance:", ethers.formatEther(a
+console.log("Owner balance:", ethers.formatEther(await ethers.provider.getBalance(owner.address)));
+const [owner, addr1, addr2] = await ethers.getSigners();
+// Получаем провайдера и подписчиковconst [owner, addr1, addr2] = await ethers.getSigners();// Проверяем баланс аккаунтовconsole.log("Owner balance:", ethers.formatEther(await ethers.provider.getBalanethers.formatEther(await ethers.provider.getBalance(addr1.address)));// Отправляем 1 ETH от owner к addr1const tx = await owner.sendTransaction({    to: addr1.address,    value: ethers.parseEther("1.0")});console.log("Transaction hash:", tx.hash);// Ждем подтвержденияawait tx.wait();// Проверяем балансы после транзакцииconsole.log("Owner balance after:", ethers.formatEther(await ethers.provider.getBalance(owner.address)));console.log("Addr1 balance after:", ethers.formatEther(await ethers.provider.getBalance(addr1.address)));
+console.log("Addr1 balance after:", ethers.formatEther(await ethers.provider.getBalance(addr1.address)));
+console.log("Owner balance after:", ethers.formatEther(await ethers.provider.getBalance(owner.address)));
+// Проверяем балансы после транзакции
+await tx.wait();
+// Ждем подтверждения
+console.log("Transaction hash:", tx.hash);
+});
+    value: ethers.parseEther("1.0")
+    to: addr1.address,
+const tx = await owner.sendTransaction({
+// Отправляем 1 ETH от owner к addr1
+console.log("Owner balance:", ethers.formatEther(await ethers.provider.getBconsole.log("Addr1 balance:", ethers.formatEther(await ethers.provider.getBalance(addr1.address)));
+// Проверяем баланс аккаунтов
+const [owner, addr1, addr2] = await ethers.getSigners();
+// Получаем провайдера и подписчиков
