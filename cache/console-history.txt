@@ -1,3 +1,75 @@
+console.log("Balance:", balance.toString());
+const balance = await ethers.provider.getBalance(address);
+// 7️⃣ Проверяем баланс контракта
+it tx.wait();
+awa
+// 6️⃣ Ждём подтверждения транзакции
+const tx = await contract.connect(user).payForTariff(paymentId, tariffId, { value: 100 });
+// 5️⃣ Вызываем функцию оплаты
+const 
+const paymentId = "0x" + "11".repeat(32);
+// 4️⃣ Генерируем тестовые UUID
+const contract = await ethers.getContractAt("QRPaymentContract", address);
+// 3️⃣ Получаем объект контракта
+const address = "0xe7f1725e7734Ce288F8367e1Bb143e90Bb3f0512";
+// 2️⃣ Адрес контракта
+const [owner, user] = await ethers.getSigners();
+// 1️⃣ Получаем аккаунты
+ в
+contract = await ethers.getContractAt("QRPaymentCo
+contract = await ethers.getContractAt("QRPaymentContract", address);
+const contract = await ethers.getContractAt("QRPay
+const tx = await contract.connect(user).payForTari
+const tariffId  = "0x" + "22".repeat(32);
+const paymentId = "0x" + "11".repeat(32);
+const contract = await ethers.getContractAt("QRPay
+const address = "0xe7f1725e7734Ce288F8367e1Bb143e90Bb3f0512";
+const [owner, user] = await ethers.getSigners();
+await contract.connect(user).payForTariff(paymentId, tariffId, { value: 100 });
+ем функцию оплаты с 100 wei (для теста)
+// 5️⃣ Вызыва
+const tariffId  = "0x" + "22".repeat(32);
+const paymentId = "0x" + "11".repeat(32);
+// 4️⃣ Генерируем тестовые UUID
+const contract = await ethers.getContractAt("QRPaymentCo
+// 3️⃣ Получаем объект контракта
+const address = "0xe7f1725e7734Ce288F8367e1Bb143e90Bb3f0512";
+// 2️⃣ Адрес контракта
+const [owner, user] = await
+// 1️⃣ Получаем аккаунты
+alue: 100 });
+await contract.connect(user).payForTariff(paymentId, tariffId, { v
+const task
+const paymentId = "0x" + "11".repeat(32);
+await contract.connect(user).payForTariff(paymentId, tariffId, { value: 100 });
+const task
+const paymentId = "0x" + "11".repeat(32);
+const paymentId = "0x" + "11".repeat(32);const tariffId = "0x" + "22".repeat(32);await contract.conne: 100 });
+const [owner, user] = await ethers.getSigners();const address = "0xe7f1725e7734Ce288F8367e1Bb143e90Bb3f0512"; // адрес твоего контрактаconst contract = await ethers.getContractAt("QRPaymentContract", address);
+cconst contract = await ethers.getContractAt("QRPaymentContract", address);
+const [owner, user] = await ethers.getSigners();
+})();
+  console.log(code);  // покажет '0x', если контракта нет, или код контракта
+  const code = await ethers.provider.getCode("0x9a9f2ccfde556a7e9ff0848998aa4a0cfd8863ae");
+(async () => {
+// оборачиваем в async IIFE, чтобы можно было использовать await
+const code = await ethers.provider.getCode("0x9a9fconsole.log(code);
+(async () => {  const code = await ethers.provider.getCode("0x9a9f2ccfde556a7e9ff0848998aa4a0cfd8863
+const code = await ethers.provider.getCode("0x9a9f(code === '0x' ? "Контракт отсутствует" : `Контракт есть, длина кода: ${code.length}`);
+const code = await ethers.provider.getCode("0x9a9f(code);
+const code = await ethers.provider.getCode("0x9a9f
+// Получаем фабрику контрактаconst QRPaymentContract = await ethers.getContractFactory("QRPaymentContract");// Деплой на локальную сетьconst contract = await QRPaymentContract.deploy();await contract.waitForDeployment(); // ждем, пока контракт будет полностью задеплоенconsole.log("Contract deployed at:", contract.target);
+// Получаем фабрику контрактаconst QRPaymentContract = await ethers.getContractFactory("QRPaymentConwaitForDeployment(); // ждем, пока контракт будет полностью задеплоенconsole.log("Contract deployed at:", contract.target);
+const code = await ethers.provider.getCode("0xFA51(code);
+const code = await ethers.provider.getCode("0xFA51console.log(code);
+processed
+const processed = await contract.isPaymentProcessed(paymentId);
+const paymentId = ethers.encodeBytes32String("test123");
+const contract = await ethers.getContractAt("QRPaymentContract", "0xfa514288257496bd45c3e37ebbbc91a5fedc8871");
+processed  
+const contract = await ethers.getContractAt("QRPaymentContract", "0xfa514288257496bd45c3e37ebbbc91a5fedc8871");const paymentId = ethers.encodeBytes32String("test123");// вызов методаconst processed = await contract.isPaymentProcessed(paymentId);console.log(processed); // должно вернуть true
+const contract = await ethers.getContractAt("QRPaymentContract", "0xfa514288257496bd45c3e37ebbbc91a5fedc8871");const paymentId = ethers.encodeBytes32String("test123");await contract.isPaymentProcessed
+const [sender] = await ethers.getSigners();const contract = await ethers.getContractAt("QRPaymentContract", "0xfa514288257496bd45c3e37ebbbc91a5fedc8871");const paymentId = ethers.encodeBytes32String("test123");const tx = await contract.connect(sender).payForTariff(paymentId, { value: ethers.parseEther("0.001") });await tx.wait();console.log("Payment done:", tx.hash);
 exit
 console.log("Transaction hash:", tx.hash);
 });

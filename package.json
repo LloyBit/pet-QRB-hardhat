@@ -1,16 +1,14 @@
 {
   "name": "pet-qrb-hardhat",
   "version": "1.0.0",
-  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.",
+  "description": "Hardhat node for local blockchain development and testing of QR payment system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx hardhat node --hostname 0.0.0.0 --port 8545",
     "node": "npx hardhat node --hostname 0.0.0.0 --port 8545",
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat run scripts/deploy.js --network localhost",
-    "save-state": "npx hardhat run scripts/save-state.js --network localhost",
-    "load-state": "npx hardhat run scripts/load-state.js --network localhost"
+    "deploy:ignition": "npx hardhat ignition deploy ignition/modules/QRPaymentContract.js --network localhost"
   },
   "repository": {
     "type": "git",
@@ -27,8 +25,5 @@
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "chai": "^4.5.0",
     "hardhat": "^2.26.3"
-  },
-  "directories": {
-    "test": "test"
   }
 }
